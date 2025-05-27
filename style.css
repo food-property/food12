@@ -7,9 +7,10 @@
 body {
 
 
-  font-family: 'Segoe UI', sans-serif;
+  font-family: ' Arial, sans-serif';
   background: linear-gradient(135deg, #983373, #593172);
   color: #fff;
+  padding: 20px
 }
 
 .navbar {
@@ -25,9 +26,9 @@ body {
   font-size: 1.5rem;     
    font-weight: bold;
    max-width: 5em;
-    grid-template-columns: repeat(2, 120px);
-  grid-template-rows: repeat(3, 120px);
-    gap: 1rem;
+  border-radius: 50%;
+  background-size: cover;
+    background-position: center;
 }
 
 .nav-links a {
@@ -69,14 +70,15 @@ body {
   border-radius: 50px;
   background: white;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
+  margin-bottom: 20px;
 }
 
 .search-bar input {
   flex: 1;
   border: none;
-  padding: 1rem;
-  font-size: 1rem;
+  padding: 10px;
+  font-size: 16px;
   outline: none;
 }
 
@@ -84,9 +86,11 @@ body {
   background-color: #9333ea;
   color: #fff;
   border: none;
-  padding: 0 2rem;
+  padding: 10px 20px;
   font-weight: bold;
   cursor: pointer;
+   border: none;
+   border-radius: 0 25px 25px 0;
 }
 
 .example-prompts {
@@ -156,6 +160,7 @@ body {
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
+gap:15px;
 
 }
 .card {
@@ -172,17 +177,23 @@ flex-wrap: wrap;
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .card-title {
     margin: 0 0 10px 0;
     color: #709a7d;
 }
+  .card.selected {
+      border: 3px solid #9333ea;
+      background: #f3e5ff;
+      color: #37005b;
+    }
 
 .card-content {
     margin: 0 0 10px 0;
     color: #5f6368;
+    font-size: 1.2rem;
 }
 
 .card-image {
